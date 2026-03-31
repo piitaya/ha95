@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Увімкніть Retro Experience, щоб перетворити Home Assistant на ностальгічний ретро-досвід з асистентом!"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Вже налаштовано. Можлива лише одна конфігурація."
+    }
+  },
+  "entity": {
+    "switch": {
+      "theme": {
+        "name": "Тема"
+      },
+      "assistant": {
+        "name": "Асистент"
+      }
+    }
+  }
+}

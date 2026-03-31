@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Retro Experience를 활성화하여 Home Assistant를 향수어린 레트로 경험으로 변환하세요. 어시스턴트가 포함되어 있습니다!"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "이미 설정되었습니다. 하나의 설정만 가능합니다."
+    }
+  },
+  "entity": {
+    "switch": {
+      "theme": {
+        "name": "테마"
+      },
+      "assistant": {
+        "name": "어시스턴트"
+      }
+    }
+  }
+}

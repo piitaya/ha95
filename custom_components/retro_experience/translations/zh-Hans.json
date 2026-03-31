@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "启用 Retro Experience，将你的 Home Assistant 变成怀旧的复古体验，还有一个助手！"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "已配置。只能配置一次。"
+    }
+  },
+  "entity": {
+    "switch": {
+      "theme": {
+        "name": "主题"
+      },
+      "assistant": {
+        "name": "助手"
+      }
+    }
+  }
+}

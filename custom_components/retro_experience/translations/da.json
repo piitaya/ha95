@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Aktivér Retro Experience for at forvandle dit Home Assistant til en nostalgisk retrooplevelse, komplet med en assistent!"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Allerede konfigureret. Kun én konfiguration mulig."
+    }
+  },
+  "entity": {
+    "switch": {
+      "theme": {
+        "name": "Tema"
+      },
+      "assistant": {
+        "name": "Assistent"
+      }
+    }
+  }
+}
