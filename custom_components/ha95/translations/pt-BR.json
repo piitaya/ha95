@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "Ative o Retro Experience para transformar seu Home Assistant em uma experiência retrô nostálgica, com um assistente!\n\n**Recarregue o navegador após a instalação!**"
+        "description": "Ative o Home Assistant 95 para transformar seu Home Assistant em uma experiência retrô nostálgica, com um assistente!\n\n**Recarregue o navegador após a instalação!**"
       }
     },
     "abort": {

@@ -1,4 +1,4 @@
-"""Switch platform for Retro Experience."""
+"""Switch platform for Home Assistant 95."""
 
 from __future__ import annotations
 
@@ -16,17 +16,17 @@ async def async_setup_entry(
     entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up the Retro Experience switches."""
+    """Set up the Home Assistant 95 switches."""
     async_add_entities(
         [
-            RetroExperienceThemeSwitch(entry),
-            RetroExperienceAssistantSwitch(entry),
+            HA95ThemeSwitch(entry),
+            HA95AssistantSwitch(entry),
         ]
     )
 
 
-class RetroExperienceBaseSwitch(SwitchEntity, RestoreEntity):
-    """Base switch for Retro Experience."""
+class HA95BaseSwitch(SwitchEntity, RestoreEntity):
+    """Base switch for Home Assistant 95."""
 
     _attr_has_entity_name = True
     _attr_should_poll = False
@@ -35,7 +35,7 @@ class RetroExperienceBaseSwitch(SwitchEntity, RestoreEntity):
         """Initialize the switch."""
         self._attr_device_info = {
             "identifiers": {(DOMAIN, entry.entry_id)},
-            "name": "Retro Experience",
+            "name": "Home Assistant 95",
         }
         self._attr_is_on = False
 
@@ -57,7 +57,7 @@ class RetroExperienceBaseSwitch(SwitchEntity, RestoreEntity):
         self.async_write_ha_state()
 
 
-class RetroExperienceThemeSwitch(RetroExperienceBaseSwitch):
+class HA95ThemeSwitch(HA95BaseSwitch):
     """Switch to enable/disable the retro theme."""
 
     _attr_translation_key = "theme"
@@ -68,7 +68,7 @@ class RetroExperienceThemeSwitch(RetroExperienceBaseSwitch):
         self._attr_unique_id = f"{entry.entry_id}_theme"
 
 
-class RetroExperienceAssistantSwitch(RetroExperienceBaseSwitch):
+class HA95AssistantSwitch(HA95BaseSwitch):
     """Switch to enable/disable the assistant."""
 
     _attr_translation_key = "assistant"

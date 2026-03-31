@@ -1,4 +1,4 @@
-"""Retro Experience integration for Home Assistant."""
+"""Home Assistant 95 integration for Home Assistant."""
 
 from __future__ import annotations
 
@@ -17,12 +17,12 @@ PLATFORMS = [Platform.SWITCH]
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Set up the Retro Experience component."""
+    """Set up the Home Assistant 95 component."""
     return True
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up Retro Experience from a config entry."""
+    """Set up Home Assistant 95 from a config entry."""
     await hass.http.async_register_static_paths(
         [
             StaticPathConfig(
@@ -33,7 +33,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         ]
     )
 
-    add_extra_js_url(hass, f"{URL_BASE}/retro-experience.js")
+    add_extra_js_url(hass, f"{URL_BASE}/ha95.js")
 
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
 
@@ -42,5 +42,5 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Unload a config entry."""
-    remove_extra_js_url(hass, f"{URL_BASE}/retro-experience.js")
+    remove_extra_js_url(hass, f"{URL_BASE}/ha95.js")
     return await hass.config_entries.async_unload_platforms(entry, PLATFORMS)

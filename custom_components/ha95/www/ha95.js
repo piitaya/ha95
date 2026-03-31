@@ -1,5 +1,5 @@
-// Retro Experience for Home Assistant
-// Transforms HA into a nostalgic retro experience with an assistant
+// Home Assistant 95 for Home Assistant
+// Transforms HA into a nostalgic Home Assistant 95 experience
 
 const RETRO_THEME_LIGHT = {
   // Sharp corners
@@ -378,8 +378,8 @@ const BSOD = {
 };
 
 const STORAGE_KEY = "retro-position";
-const THEME_STORAGE_KEY = "retro-experience-theme";
-const CASITA_STORAGE_KEY = "retro-experience-assistant";
+const THEME_STORAGE_KEY = "ha95-theme";
+const CASITA_STORAGE_KEY = "ha95-assistant";
 const DRAG_THRESHOLD = 5;
 const BUBBLE_TIMEOUT = 8000;
 const SLEEP_TIMEOUT = 30000;
@@ -387,7 +387,7 @@ const BSOD_CLICK_COUNT = 5;
 const BSOD_CLICK_TIMEOUT = 3000;
 const BSOD_DISMISS_DELAY = 500;
 
-const DOMAIN = "retro_experience";
+const DOMAIN = "ha95";
 
 // ----- Cached state (for instant theme on refresh) -----
 
@@ -652,7 +652,7 @@ const CASITA_STYLES = `
   }
 `;
 
-class RetroExperienceAssistant extends HTMLElement {
+class HA95Assistant extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -1125,13 +1125,13 @@ class RetroExperienceAssistant extends HTMLElement {
   }
 }
 
-customElements.define("retro-experience-assistant", RetroExperienceAssistant);
+customElements.define("ha95-assistant", HA95Assistant);
 
 // ----- Initialization -----
 
 function injectCasita() {
-  if (document.querySelector("retro-experience-assistant")) return;
-  const casita = document.createElement("retro-experience-assistant");
+  if (document.querySelector("ha95-assistant")) return;
+  const casita = document.createElement("ha95-assistant");
   document.body.appendChild(casita);
 }
 
@@ -1142,7 +1142,7 @@ if (document.readyState === "loading") {
 }
 
 console.info(
-  "%c RETRO EXPERIENCE %c Loaded ",
+  "%c Home Assistant 95 %c Loaded ",
   "color: #fff; background: #000080; font-weight: bold; padding: 2px 6px;",
   "color: #000; background: #C0C0C0; font-weight: bold; padding: 2px 6px;"
 );

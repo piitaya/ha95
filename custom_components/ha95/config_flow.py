@@ -1,4 +1,4 @@
-"""Config flow for Retro Experience integration."""
+"""Config flow for Home Assistant 95 integration."""
 
 from __future__ import annotations
 
@@ -9,8 +9,8 @@ from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 from .const import DOMAIN
 
 
-class RetroExperienceConfigFlow(ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Retro Experience."""
+class HA95ConfigFlow(ConfigFlow, domain=DOMAIN):
+    """Handle a config flow for Home Assistant 95."""
 
     VERSION = 1
 
@@ -22,6 +22,6 @@ class RetroExperienceConfigFlow(ConfigFlow, domain=DOMAIN):
             return self.async_abort(reason="single_instance_allowed")
 
         if user_input is not None:
-            return self.async_create_entry(title="Retro Experience", data={})
+            return self.async_create_entry(title="Home Assistant 95", data={})
 
         return self.async_show_form(step_id="user")

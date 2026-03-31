@@ -1,0 +1,10 @@
+{
+  "domain": "ha95",
+  "name": "Home Assistant 95",
+  "codeowners": ["@piitaya"],
+  "config_flow": true,
+  "documentation": "https://github.com/piitaya/ha95",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "version": "1.0.0"
+}

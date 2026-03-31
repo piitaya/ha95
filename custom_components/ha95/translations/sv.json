@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "Aktivera Retro Experience för att förvandla ditt Home Assistant till en nostalgisk retroupplevelse, komplett med en assistent!\n\n**Ladda om webbläsaren efter installationen!**"
+        "description": "Aktivera Home Assistant 95 för att förvandla ditt Home Assistant till en nostalgisk retroupplevelse, komplett med en assistent!\n\n**Ladda om webbläsaren efter installationen!**"
       }
     },
     "abort": {

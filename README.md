@@ -1,4 +1,6 @@
-# Retro Experience for Home Assistant
+# Home Assistant 95
+
+![Home Assistant 95](image.jpg)
 
 > **Warning**: This integration is experimental and just for fun. It overrides your frontend theme and injects UI elements. Use at your own risk.
 
@@ -17,25 +19,25 @@ Transform your Home Assistant into a nostalgic retro experience!
 
 1. Add this repository as a custom repository in HACS
 
-   [![Add repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=piitaya&repository=ha-retro-experience&category=integration)
+   [![Add repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=piitaya&repository=ha95&category=integration)
 
-2. Install "Retro Experience"
+2. Install "Home Assistant 95"
 3. Restart Home Assistant
 4. Add the integration:
 
-   [![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=retro_experience)
+   [![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=ha95)
 
 ### Manual
 
-1. Copy the `custom_components/retro_experience` folder to your `config/custom_components/` directory
+1. Copy the `custom_components/ha95` folder to your `config/custom_components/` directory
 2. Restart Home Assistant
 3. Add the integration:
 
-   [![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=retro_experience)
+   [![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=ha95)
 
 ## Usage
 
-Once installed, the integration creates two switches under the **Retro Experience** device:
+Once installed, the integration creates two switches under the **Home Assistant 95** device:
 
 - **Theme** — Enables the retro theme override (bevel effects, classic colors, Tahoma font)
 - **Assistant** — Shows a draggable assistant with home automation tips

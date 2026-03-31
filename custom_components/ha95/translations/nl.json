@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "Schakel Retro Experience in om je Home Assistant om te toveren in een nostalgische retro-ervaring, compleet met een assistent!\n\n**Herlaad je browser na de installatie!**"
+        "description": "Schakel Home Assistant 95 in om je Home Assistant om te toveren in een nostalgische retro-ervaring, compleet met een assistent!\n\n**Herlaad je browser na de installatie!**"
       }
     },
     "abort": {
