@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "启用 Retro Experience，将你的 Home Assistant 变成怀旧的复古体验，还有一个助手！\n\n**A browser refresh is required after installation!**"
+        "description": "启用 Retro Experience，将你的 Home Assistant 变成怀旧的复古体验，还有一个助手！\n\n**安装后请刷新浏览器！**"
       }
     },
     "abort": {

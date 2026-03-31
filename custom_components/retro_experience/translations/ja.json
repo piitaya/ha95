@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "Retro Experience を有効にして、Home Assistant を懐かしいレトロ体験に変えましょう！アシスタント付き！\n\n**A browser refresh is required after installation!**"
+        "description": "Retro Experience を有効にして、Home Assistant を懐かしいレトロ体験に変えましょう！アシスタント付き！\n\n**インストール後、ブラウザを再読み込みしてください！**"
       }
     },
     "abort": {
