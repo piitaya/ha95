@@ -6,5 +6,5 @@
   "documentation": "https://github.com/piitaya/ha-retro-experience",
   "integration_type": "service",
   "iot_class": "calculated",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
