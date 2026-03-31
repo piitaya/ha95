@@ -41,3 +41,5 @@ Once installed, the integration creates two switches under the **Retro Experienc
 - **Assistant** — Shows a draggable assistant with home automation tips
 
 Both switches are off by default. Turn them on to activate.
+
+**A browser refresh is required after installing the integration for the first time!**
