@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Enable Retro Experience to transform your Home Assistant into a nostalgic retro experience, complete with an assistant!"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Already configured. Only a single configuration possible."
+    }
+  },
+  "entity": {
+    "switch": {
+      "theme": {
+        "name": "Theme"
+      },
+      "assistant": {
+        "name": "Assistant"
+      }
+    }
+  }
+}

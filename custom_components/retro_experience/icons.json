@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "switch": {
+      "theme": {
+        "default": "mdi:monitor",
+        "state": {
+          "off": "mdi:monitor-off"
+        }
+      },
+      "assistant": {
+        "default": "mdi:robot-happy-outline",
+        "state": {
+          "off": "mdi:robot-off-outline"
+        }
+      }
+    }
+  }
+}
