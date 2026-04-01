@@ -384,7 +384,7 @@ const DRAG_THRESHOLD = 5;
 const BUBBLE_TIMEOUT = 8000;
 const SLEEP_TIMEOUT = 30000;
 const BSOD_CLICK_COUNT = 5;
-const BSOD_CLICK_TIMEOUT = 3000;
+const BSOD_CLICK_TIMEOUT = 300;
 const BSOD_DISMISS_DELAY = 500;
 
 const DOMAIN = "ha95";
@@ -430,6 +430,8 @@ function findRetroEntities(hass) {
 
 // ----- Theme application -----
 
+const THEME_STYLE_ID = "ha95-theme-style";
+
 function isDarkMode() {
   const hass = getHass();
   if (hass && hass.themes) {
@@ -438,32 +440,25 @@ function isDarkMode() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
-let _isApplyingTheme = false;
-let _themeApplied = false;
-let _themeKeys = [];
-
 function applyRetroTheme() {
-  _isApplyingTheme = true;
   const theme = isDarkMode() ? RETRO_THEME_DARK : RETRO_THEME_LIGHT;
-  const el = document.documentElement;
-  _themeKeys = Object.keys(theme);
-  for (const [key, value] of Object.entries(theme)) {
-    el.style.setProperty(key, value);
+  const css = Object.entries(theme)
+    .map(([key, value]) => `  ${key}: ${value} !important;`)
+    .join("\n");
+  let styleEl = document.getElementById(THEME_STYLE_ID);
+  if (!styleEl) {
+    styleEl = document.createElement("style");
+    styleEl.id = THEME_STYLE_ID;
+    document.head.appendChild(styleEl);
   }
-  _themeApplied = true;
-  _isApplyingTheme = false;
+  styleEl.textContent = `:root {\n${css}\n}`;
 }
 
 function revertRetroTheme() {
-  if (!_themeApplied) return;
-  _isApplyingTheme = true;
-  const el = document.documentElement;
-  for (const key of _themeKeys) {
-    el.style.removeProperty(key);
+  const styleEl = document.getElementById(THEME_STYLE_ID);
+  if (styleEl) {
+    styleEl.remove();
   }
-  _themeApplied = false;
-  _themeKeys = [];
-  _isApplyingTheme = false;
 }
 
 // Apply immediately from cache so there's no flash on refresh
