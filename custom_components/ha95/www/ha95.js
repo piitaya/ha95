@@ -183,6 +183,7 @@ const RETRO_THEME_DARK = {
   "--ha-border-radius-6xl": "0",
   "--ha-border-radius-pill": "0",
   "--ha-border-radius-circle": "0",
+  "--ha-badge-border-radius": "0",
 
   // Fonts
   "--ha-font-family-body":
