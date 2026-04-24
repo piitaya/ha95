@@ -6,6 +6,8 @@
 
 Transform your Home Assistant into a nostalgic retro experience!
 
+https://github.com/user-attachments/assets/fdc30c27-458e-44f0-aa2e-2621c7ed2a4b
+
 ## Features
 
 - **Retro Theme**: Applies a full retro theme with bevel effects, classic colors, and Tahoma font
